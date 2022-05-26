@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "cross-env NODE_ENV=testing jest --runInBand",
     "start": "node index.js",
     "server": "nodemon index.js",
     "migrate": "knex migrate:latest",
@@ -26,6 +26,7 @@
     "sqlite3": "^5.0.8"
   },
   "devDependencies": {
+    "@types/jest": "^27.5.1",
     "cross-env": "^7.0.3",
     "eslint": "^8.16.0",
     "jest": "^28.1.0",

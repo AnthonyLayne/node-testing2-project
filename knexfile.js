@@ -22,4 +22,10 @@ module.exports = {
       filename: "./data/quotes.db3",
     },
   },
+  testing: {
+    ...sheredConfig,
+    connection: {
+      filename: "./data/test.db3",
+    },
+  },
 };
